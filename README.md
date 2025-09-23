@@ -4,7 +4,7 @@
 
 ```
 // git clone
-https://github.com/performance-lecture/lecture2.git
+git clone https://github.com/performance-lecture/lecture2.git
 
 cd performance-lecture2
 code .
