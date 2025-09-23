@@ -12,11 +12,14 @@ code .
 // 의존성 설치
 npm i
 
-// OpenSSL 호환성 이슈로 환경 변수 설정해서 legacy OpenSSL 알고리즘 허용
+// OpenSSL 호환성 이슈로 환경 변수 설정해서 legacy OpenSSL 알고리즘 허용 필요
 $env:NODE_OPTIONS="--openssl-legacy-provider"
 
 // 개발 서버 가동 (localhost:3000)
 npm run start
+
+// 평소에 이렇게 개발 서버 켭시다
+$env:NODE_OPTIONS="--openssl-legacy-provider"; npm start
 
 // JSON 서버 가동 (localhost:3001) npm run start 실행한 콘솔과 다른 콘솔에서 실행한 뒤에 종료하지 않을 것.
 npm run server
